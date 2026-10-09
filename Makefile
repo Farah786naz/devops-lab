@@ -61,9 +61,6 @@ clean:
 
 # 8. CI entry point: fresh clean -> check -> full test
 ci: clean check test
-
-# LAB-03 FUNCTION:
-#This is the function added by the friend with different approach
-count: build  ## count the source files
+count: build  ## report source files and built words
 	@ls -1 $(SRC_DIR)/*.txt | wc -l
-#this is in main
+	@wc -w $(OUTPUTS) | tail -1
