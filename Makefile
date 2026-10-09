@@ -66,3 +66,4 @@ ci: clean check test
 #This is the function added by the friend with different approach
 count: build  ## count the source files
 	@ls -1 $(SRC_DIR)/*.txt | wc -l
+#this is in main
