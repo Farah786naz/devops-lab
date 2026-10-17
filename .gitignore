@@ -1,2 +1,4 @@
 out/
+
+# Ignore log files
 *.log
